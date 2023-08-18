@@ -28,6 +28,17 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/google-analytics',
+    ['@nuxtjs/yandex-metrika',
+    {
+      id: '94673343',
+      webvisor: true,
+      clickmap: true,
+      // useCDN:false,
+      trackLinks: true,
+      accurateTrackBounce: true
+    }
+  ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -41,7 +52,8 @@ export default {
       trackLinks: true,
       accurateTrackBounce: true
     }
-  ]
+  ],
+  '@nuxtjs/google-analytics'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -51,5 +63,9 @@ export default {
   target: 'static',
   router: {
     base: 'http://kate4ka007.github.io/nuxt-starter'
+  },
+
+  googleAnalytics: {
+    id: 'G-NWL4WQK07L'
   }
 }
