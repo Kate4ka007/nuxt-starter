@@ -1,6 +1,18 @@
 # Next.js Starter
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Этот проект представляет собой чистый Next.js стартер с настроенной аналитикой и автоматическим деплоем в GitHub Pages.
+
+## 🚀 Возможности
+
+- ✅ **Next.js 14** с App Router
+- ✅ **TypeScript** для типобезопасности
+- ✅ **Tailwind CSS** для стилизации
+- ✅ **Google Tag Manager** для управления тегами
+- ✅ **Google Analytics** для аналитики
+- ✅ **Yandex.Metrika** для аналитики
+- ✅ **WhatsApp кнопка** с трекингом событий
+- ✅ **Автоматический деплой** в GitHub Pages
+- ✅ **UTM трекинг** для маркетинговых кампаний
 
 ## Getting Started
 
@@ -22,17 +34,42 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 📊 Аналитика
 
-To learn more about Next.js, take a look at the following resources:
+Проект настроен с полной аналитикой:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Google Tag Manager**: GTM-TKRK9RCR
+- **Google Analytics**: G-F1T0H93WD6
+- **Yandex.Metrika**: 94673343
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Деплой
 
-## Deploy on Vercel
+### GitHub Pages (автоматический)
+При каждом push в ветку `main` проект автоматически деплоится в GitHub Pages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Ручной деплой
+```bash
+npm run deploy
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Подробные инструкции в [DEPLOY.md](./DEPLOY.md)
+
+## 🧪 Тестирование
+
+Для тестирования UTM трекинга добавьте параметры к URL:
+```
+https://yoursite.com/?utm_source=test&utm_medium=email&utm_campaign=welcome
+```
+
+## 📝 Настройка
+
+1. Замените `+1234567890` в `components/WhatsAppButton.tsx` на ваш номер
+2. Обновите ID аналитики в `app/layout.tsx` при необходимости
+3. Измените `basePath` в `next.config.js` под ваш репозиторий
+
+## 📚 Документация
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Google Analytics](https://developers.google.com/analytics)
+- [Yandex.Metrika](https://yandex.ru/support/metrica/)
